@@ -1,0 +1,87 @@
+/* shared style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-color {
+    color: #4E47FF;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+header {
+    background-image: url('../images/Hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.nav h2 {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 150%;
+}
+
+.nav button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    border-radius: 10px;
+    padding: 12px 36px;
+    color: white;
+    border: none;
+    background-color: #4E47FF;
+    cursor: pointer;
+}
+
+.banner {
+    text-align: center;
+    width: 905px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76px;
+    color: rgba(37, 36, 50, 1);
+    padding: 208px 0px 37px 0px;
+}
+
+.banner button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    border-radius: 10px;
+    padding: 12px 36px;
+    color: white;
+    border: none;
+    background-color: #4E47FF;
+    margin-bottom: 152px;
+    cursor: pointer;
+}
+
+.banner button:hover , .nav button:hover{
+    background-color: white;
+    color: #4E47FF;
+    border: 2px solid #4E47FF;
+    box-shadow: 5px 5px 20px #4E47FF;
+    transition: .5s;
+}
