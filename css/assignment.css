@@ -25,6 +25,9 @@ header {
     background-size: cover;
 }
 
+main{
+    background-color: #f5f8ff;
+}
 
 .nav {
     display: flex;
@@ -39,7 +42,9 @@ header {
     line-height: 150%;
 }
 
-.nav button {
+.nav button,
+.banner button,
+.action button {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
@@ -66,22 +71,46 @@ header {
 }
 
 .banner button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    border-radius: 10px;
-    padding: 12px 36px;
-    color: white;
-    border: none;
-    background-color: #4E47FF;
     margin-bottom: 152px;
-    cursor: pointer;
 }
 
-.banner button:hover , .nav button:hover{
+.banner button:hover,
+.nav button:hover {
     background-color: white;
     color: #4E47FF;
     border: 2px solid #4E47FF;
     box-shadow: 5px 5px 20px #4E47FF;
     transition: .5s;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 116px 0px;
+    
+}
+
+.action-wrap{
+    width: 517px; 
+}
+
+.action-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    color: rgba(37, 36, 50, 1);
+}
+
+.action-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(37, 36, 50, 0.5);
+    padding: 23px 0px;
+}
+
+.action img{
+    border-radius: 48px;
 }
