@@ -16,6 +16,7 @@ a {
 
 .container {
     max-width: 1140px;
+    margin: 0 auto;
 }
 
 header {
@@ -25,14 +26,13 @@ header {
     background-size: cover;
 }
 
-main{
+main {
     background-color: #f5f8ff;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     padding-top: 50px;
 }
 
@@ -44,7 +44,10 @@ main{
 
 .nav button,
 .banner button,
-.action button {
+.action button,
+.focus button,
+.newsletter button {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
@@ -63,6 +66,7 @@ main{
 }
 
 .banner-title {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 76px;
@@ -75,10 +79,10 @@ main{
 }
 
 .banner button:hover,
-.nav button:hover {
+.nav button:hover,
+.focus button:hover, .action button:hover {
     background-color: white;
     color: #4E47FF;
-    border: 2px solid #4E47FF;
     box-shadow: 5px 5px 20px #4E47FF;
     transition: .5s;
 }
@@ -89,14 +93,15 @@ main{
     margin: 0 auto;
     align-items: center;
     padding: 116px 0px;
-    
+
 }
 
-.action-wrap{
-    width: 517px; 
+.action-wrap {
+    width: 517px;
 }
 
 .action-title {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 49px;
@@ -104,6 +109,7 @@ main{
 }
 
 .action-description {
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
@@ -111,6 +117,167 @@ main{
     padding: 23px 0px;
 }
 
-.action img{
+.action img {
     border-radius: 48px;
+}
+
+.productive {
+    background-color: rgba(78, 71, 255, 0.1);
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 137px;
+}
+
+.productive .section-title {
+    font-family: "Raleway", sans-serif;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: rgba(37, 36, 50, 1);
+}
+
+.growth-wrapper {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+.growth h2 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 97px;
+    color: rgba(78, 71, 255, 1);
+}
+
+.growth h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.review .section-title {
+    text-align: center;
+}
+
+.review-wrapper {
+    display: flex;
+    background-color: white;
+
+}
+
+.review-description {
+    padding: 8px 0px 24px 0px;
+}
+
+.review-person {
+    display: flex;
+    align-items: center;
+}
+
+.focus {
+    text-align: center;
+    background-color: white;
+    padding: 71px 0px;
+}
+
+.focus h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: black;
+}
+
+.focus h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
+}
+
+.focus button {
+    margin-bottom: 20px;
+}
+
+.focus img {
+    border-radius: 48px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 0px 14px 0px;
+}
+
+.newsletter .section-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 97px;
+    line-height: 120%;
+    color: black;
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    display: block;
+    border: 1px solid #D6DDED;
+    width: 497px;
+    padding: 20px 32px;
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: black;
+}
+
+textarea {
+    width: 497px;
+    
+    border: 1px solid #D6DDED;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0px 20px 0px;
+    padding: 20px 32px;
+}
+textarea::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.newsletter button {
+    padding: 19px 200px;
+}
+
+.newsletter button:hover {
+    background-color: white;
+    color: #4E47FF;
+    box-shadow: 2px 2px 5px #4E47FF;
+    transition: .5s;
 }
