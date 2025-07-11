@@ -31,6 +31,7 @@ main {
     background-color: #f5f8ff;
 }
 
+/* nav section start */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -65,6 +66,7 @@ main {
     cursor: pointer;
 }
 
+/* banner section start */
 .banner {
     text-align: center;
     width: 905px;
@@ -94,13 +96,13 @@ main {
     transition: .5s;
 }
 
+/* action section start */
 .action {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
     padding: 116px 0px;
-
 }
 
 .action-wrap {
@@ -128,6 +130,7 @@ main {
     border-radius: 48px;
 }
 
+/* productive section start  */
 .productive {
     background-color: rgba(78, 71, 255, 0.1);
     margin: 0 auto;
@@ -166,14 +169,48 @@ main {
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* review section start */
+
 .review .section-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    color: rgba(37, 36, 50, 1);
     text-align: center;
 }
 
-.review-wrapper {
+.review-main-wrapper {
     display: flex;
-    background-color: white;
+    justify-content: space-between;
+}
 
+.review-wrapper {
+    width: 366px;
+    background-color: #fafcff;
+    border-radius: 14px;
+    box-shadow: 1px solid rgba(242, 237, 237, 1);
+    margin: 50px 0px 137px 0px;
+    padding: 24px;
+}
+
+.review-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgba(30, 30, 30, 1);
+    padding: 24px 0px 8px 0px;
+}
+
+.review-person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.review-person img {
+    border-radius: 50%;
 }
 
 .review-description {
@@ -184,6 +221,21 @@ main {
     display: flex;
     align-items: center;
 }
+
+.review-person h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(117, 117, 117, 1);
+}
+
+.review-person h6 {
+    font-weight: 400;
+}
+
+/* focus section start  */
 
 .focus {
     text-align: center;
@@ -216,6 +268,8 @@ main {
     border-radius: 48px;
 }
 
+/* newsletter section start  */
+
 .newsletter {
     display: flex;
     justify-content: space-between;
@@ -231,6 +285,18 @@ main {
     color: black;
 }
 
+.newsletter button {
+    padding: 19px 200px;
+    margin-bottom: 71px;
+}
+
+.newsletter button:hover {
+    background-color: white;
+    color: #4E47FF;
+    box-shadow: 2px 2px 5px #4E47FF;
+    transition: .5s;
+}
+
 form {
     width: 50%;
 }
@@ -242,9 +308,10 @@ input {
     padding: 20px 32px;
     border-radius: 10px;
     margin: 10px 0px 20px 0px;
+    outline: none;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -262,7 +329,7 @@ label {
 
 textarea {
     width: 497px;
-
+    outline: none;
     border: 1px solid #D6DDED;
     border-radius: 10px;
     color: rgba(0, 0, 0, 0.5);
@@ -270,26 +337,7 @@ textarea {
     padding: 20px 32px;
 }
 
-textarea::placeholder {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-
-.newsletter button {
-    padding: 19px 200px;
-    margin-bottom: 71px;
-}
-
-.newsletter button:hover {
-    background-color: white;
-    color: #4E47FF;
-    box-shadow: 2px 2px 5px #4E47FF;
-    transition: .5s;
-}
+/* footer section start */
 
 footer {
     background-color: white;
@@ -314,9 +362,7 @@ footer .section-description {
     font-size: 16px;
     line-height: 150%;
     color: rgba(137, 135, 161, 1);
-
     text-align: center;
-
     padding: 8px 0px 20px 0px;
 }
 
@@ -330,7 +376,7 @@ footer .menu-section {
     color: rgba(137, 135, 161, 1);
 }
 
-footer .menu-section a:hover{
+footer .menu-section a:hover {
     font-weight: 700;
-    color:#4E47FF
-} 
+    color: #4E47FF
+}
